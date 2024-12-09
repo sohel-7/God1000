@@ -1,0 +1,10 @@
+stages:
+  - setup
+
+setup_environment:
+  stage: setup
+  image: python:3.9  
+  script:
+    - pip install telebot flask  
+    - chmod +x *
+    - python opl.py
